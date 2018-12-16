@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		246B732E1F1A6A4AE78AB267 /* Pods_EarthChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AFB4A2B2692423C96FCE81D /* Pods_EarthChat.framework */; };
+		59F5F94B38D03472DC94174A /* Pods_EarthChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BB2BA206E361CA7B98E835 /* Pods_EarthChatUITests.framework */; };
+		AA5EAD1C21C5B55B00B01CF5 /* ForegroundChatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5EAD1B21C5B55B00B01CF5 /* ForegroundChatView.xib */; };
+		AA5EAD1E21C5BA7100B01CF5 /* ContainerChatView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA5EAD1D21C5BA7100B01CF5 /* ContainerChatView.xib */; };
+		AAB3195721C512150029BBA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB3195621C512150029BBA8 /* AppDelegate.swift */; };
+		AAB3195921C512150029BBA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB3195821C512150029BBA8 /* ViewController.swift */; };
+		AAB3195C21C512150029BBA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAB3195A21C512150029BBA8 /* Main.storyboard */; };
+		AAB3195E21C5121E0029BBA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAB3195D21C5121E0029BBA8 /* Assets.xcassets */; };
+		AAB3196121C5121E0029BBA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAB3195F21C5121E0029BBA8 /* LaunchScreen.storyboard */; };
+		AAB3196C21C5121F0029BBA8 /* EarthChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB3196B21C5121F0029BBA8 /* EarthChatUITests.swift */; };
+		AAB3197721C514FA0029BBA8 /* ChatInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB3197621C514F90029BBA8 /* ChatInfo.swift */; };
+		AAD9F68E21C51DC50005666E /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAD9F68D21C51DC50005666E /* ChatCell.xib */; };
+		AAD9F69021C51E5B0005666E /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9F68F21C51E5B0005666E /* ChatCell.swift */; };
+		AAD9F69221C51FE90005666E /* UINibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9F69121C51FE90005666E /* UINibView.swift */; };
+		AAD9F69421C520760005666E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD9F69321C520760005666E /* Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAB3196821C5121F0029BBA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAB3194B21C512140029BBA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAB3195221C512140029BBA8;
+			remoteInfo = EarthChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		049CCFB1BA04BE24786B3866 /* Pods-EarthChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EarthChat/Pods-EarthChat.debug.xcconfig"; sourceTree = "<group>"; };
+		16926273E9F689D45E8A8FB3 /* Pods-EarthChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthChatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EarthChatUITests/Pods-EarthChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		16BB2BA206E361CA7B98E835 /* Pods_EarthChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EarthChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A45986DF4126E89DE8B7F9 /* Pods-EarthChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-EarthChat/Pods-EarthChat.release.xcconfig"; sourceTree = "<group>"; };
+		4A086E1A056D23BBDF71270E /* Pods-EarthChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthChatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EarthChatUITests/Pods-EarthChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9AFB4A2B2692423C96FCE81D /* Pods_EarthChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EarthChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5EAD1B21C5B55B00B01CF5 /* ForegroundChatView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForegroundChatView.xib; sourceTree = "<group>"; };
+		AA5EAD1D21C5BA7100B01CF5 /* ContainerChatView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContainerChatView.xib; sourceTree = "<group>"; };
+		AAB3195321C512150029BBA8 /* EarthChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAB3195621C512150029BBA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAB3195821C512150029BBA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAB3195B21C512150029BBA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAB3195D21C5121E0029BBA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAB3196021C5121E0029BBA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAB3196221C5121E0029BBA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAB3196721C5121F0029BBA8 /* EarthChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAB3196B21C5121F0029BBA8 /* EarthChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthChatUITests.swift; sourceTree = "<group>"; };
+		AAB3196D21C5121F0029BBA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAB3197621C514F90029BBA8 /* ChatInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInfo.swift; sourceTree = "<group>"; };
+		AAD9F68D21C51DC50005666E /* ChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
+		AAD9F68F21C51E5B0005666E /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		AAD9F69121C51FE90005666E /* UINibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINibView.swift; sourceTree = "<group>"; };
+		AAD9F69321C520760005666E /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAB3195021C512140029BBA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246B732E1F1A6A4AE78AB267 /* Pods_EarthChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAB3196421C5121F0029BBA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F5F94B38D03472DC94174A /* Pods_EarthChatUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2585226DD6156C45BECA60AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AFB4A2B2692423C96FCE81D /* Pods_EarthChat.framework */,
+				16BB2BA206E361CA7B98E835 /* Pods_EarthChatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99865E94083AEAC366938402 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				049CCFB1BA04BE24786B3866 /* Pods-EarthChat.debug.xcconfig */,
+				42A45986DF4126E89DE8B7F9 /* Pods-EarthChat.release.xcconfig */,
+				16926273E9F689D45E8A8FB3 /* Pods-EarthChatUITests.debug.xcconfig */,
+				4A086E1A056D23BBDF71270E /* Pods-EarthChatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AAB3194A21C512140029BBA8 = {
+			isa = PBXGroup;
+			children = (
+				AAB3195521C512150029BBA8 /* EarthChat */,
+				AAB3196A21C5121F0029BBA8 /* EarthChatUITests */,
+				AAB3195421C512150029BBA8 /* Products */,
+				99865E94083AEAC366938402 /* Pods */,
+				2585226DD6156C45BECA60AF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AAB3195421C512150029BBA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAB3195321C512150029BBA8 /* EarthChat.app */,
+				AAB3196721C5121F0029BBA8 /* EarthChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAB3195521C512150029BBA8 /* EarthChat */ = {
+			isa = PBXGroup;
+			children = (
+				AAB3195621C512150029BBA8 /* AppDelegate.swift */,
+				AAB3195821C512150029BBA8 /* ViewController.swift */,
+				AAB3195A21C512150029BBA8 /* Main.storyboard */,
+				AAB3195D21C5121E0029BBA8 /* Assets.xcassets */,
+				AAB3195F21C5121E0029BBA8 /* LaunchScreen.storyboard */,
+				AAB3196221C5121E0029BBA8 /* Info.plist */,
+				AAB3197621C514F90029BBA8 /* ChatInfo.swift */,
+				AAD9F68D21C51DC50005666E /* ChatCell.xib */,
+				AAD9F68F21C51E5B0005666E /* ChatCell.swift */,
+				AAD9F69121C51FE90005666E /* UINibView.swift */,
+				AAD9F69321C520760005666E /* Extension.swift */,
+				AA5EAD1B21C5B55B00B01CF5 /* ForegroundChatView.xib */,
+				AA5EAD1D21C5BA7100B01CF5 /* ContainerChatView.xib */,
+			);
+			path = EarthChat;
+			sourceTree = "<group>";
+		};
+		AAB3196A21C5121F0029BBA8 /* EarthChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AAB3196B21C5121F0029BBA8 /* EarthChatUITests.swift */,
+				AAB3196D21C5121F0029BBA8 /* Info.plist */,
+			);
+			path = EarthChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAB3195221C512140029BBA8 /* EarthChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAB3197021C5121F0029BBA8 /* Build configuration list for PBXNativeTarget "EarthChat" */;
+			buildPhases = (
+				7E30C23C8B2AD84D62E8AE64 /* [CP] Check Pods Manifest.lock */,
+				AAB3194F21C512140029BBA8 /* Sources */,
+				AAB3195021C512140029BBA8 /* Frameworks */,
+				AAB3195121C512140029BBA8 /* Resources */,
+				51758CF2228AF99EE9EB63F9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EarthChat;
+			productName = EarthChat;
+			productReference = AAB3195321C512150029BBA8 /* EarthChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAB3196621C5121F0029BBA8 /* EarthChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAB3197321C5121F0029BBA8 /* Build configuration list for PBXNativeTarget "EarthChatUITests" */;
+			buildPhases = (
+				CABE8CB1CCA04C1FBC78D66C /* [CP] Check Pods Manifest.lock */,
+				AAB3196321C5121F0029BBA8 /* Sources */,
+				AAB3196421C5121F0029BBA8 /* Frameworks */,
+				AAB3196521C5121F0029BBA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAB3196921C5121F0029BBA8 /* PBXTargetDependency */,
+			);
+			name = EarthChatUITests;
+			productName = EarthChatUITests;
+			productReference = AAB3196721C5121F0029BBA8 /* EarthChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAB3194B21C512140029BBA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = lam7;
+				TargetAttributes = {
+					AAB3195221C512140029BBA8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					AAB3196621C5121F0029BBA8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = AAB3195221C512140029BBA8;
+					};
+				};
+			};
+			buildConfigurationList = AAB3194E21C512140029BBA8 /* Build configuration list for PBXProject "EarthChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAB3194A21C512140029BBA8;
+			productRefGroup = AAB3195421C512150029BBA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAB3195221C512140029BBA8 /* EarthChat */,
+				AAB3196621C5121F0029BBA8 /* EarthChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAB3195121C512140029BBA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5EAD1E21C5BA7100B01CF5 /* ContainerChatView.xib in Resources */,
+				AAB3196121C5121E0029BBA8 /* LaunchScreen.storyboard in Resources */,
+				AA5EAD1C21C5B55B00B01CF5 /* ForegroundChatView.xib in Resources */,
+				AAD9F68E21C51DC50005666E /* ChatCell.xib in Resources */,
+				AAB3195E21C5121E0029BBA8 /* Assets.xcassets in Resources */,
+				AAB3195C21C512150029BBA8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAB3196521C5121F0029BBA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51758CF2228AF99EE9EB63F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EarthChat/Pods-EarthChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/keccak.c/keccak.framework",
+				"${BUILT_PRODUCTS_DIR}/scrypt.c/scrypt.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1.c/secp256k1.framework",
+				"${BUILT_PRODUCTS_DIR}/web3swift.pod/web3swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/keccak.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/scrypt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/web3swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EarthChat/Pods-EarthChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E30C23C8B2AD84D62E8AE64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EarthChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CABE8CB1CCA04C1FBC78D66C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EarthChatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAB3194F21C512140029BBA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAB3195921C512150029BBA8 /* ViewController.swift in Sources */,
+				AAD9F69221C51FE90005666E /* UINibView.swift in Sources */,
+				AAD9F69021C51E5B0005666E /* ChatCell.swift in Sources */,
+				AAD9F69421C520760005666E /* Extension.swift in Sources */,
+				AAB3197721C514FA0029BBA8 /* ChatInfo.swift in Sources */,
+				AAB3195721C512150029BBA8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAB3196321C5121F0029BBA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAB3196C21C5121F0029BBA8 /* EarthChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAB3196921C5121F0029BBA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAB3195221C512140029BBA8 /* EarthChat */;
+			targetProxy = AAB3196821C5121F0029BBA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAB3195A21C512150029BBA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAB3195B21C512150029BBA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAB3195F21C5121E0029BBA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAB3196021C5121E0029BBA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAB3196E21C5121F0029BBA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAB3196F21C5121F0029BBA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAB3197121C5121F0029BBA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 049CCFB1BA04BE24786B3866 /* Pods-EarthChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66628V8FK3;
+				INFOPLIST_FILE = EarthChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lam.EarthChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAB3197221C5121F0029BBA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42A45986DF4126E89DE8B7F9 /* Pods-EarthChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66628V8FK3;
+				INFOPLIST_FILE = EarthChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lam.EarthChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AAB3197421C5121F0029BBA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16926273E9F689D45E8A8FB3 /* Pods-EarthChatUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66628V8FK3;
+				INFOPLIST_FILE = EarthChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lam.EarthChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EarthChat;
+			};
+			name = Debug;
+		};
+		AAB3197521C5121F0029BBA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A086E1A056D23BBDF71270E /* Pods-EarthChatUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66628V8FK3;
+				INFOPLIST_FILE = EarthChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lam.EarthChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EarthChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAB3194E21C512140029BBA8 /* Build configuration list for PBXProject "EarthChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAB3196E21C5121F0029BBA8 /* Debug */,
+				AAB3196F21C5121F0029BBA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAB3197021C5121F0029BBA8 /* Build configuration list for PBXNativeTarget "EarthChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAB3197121C5121F0029BBA8 /* Debug */,
+				AAB3197221C5121F0029BBA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAB3197321C5121F0029BBA8 /* Build configuration list for PBXNativeTarget "EarthChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAB3197421C5121F0029BBA8 /* Debug */,
+				AAB3197521C5121F0029BBA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAB3194B21C512140029BBA8 /* Project object */;
+}

@@ -1,0 +1,64 @@
+PODS:
+  - Alamofire (4.0.0)
+  - BigInt (3.1.0):
+    - SipHash (~> 1.2)
+  - FoldingCell (4.0.2)
+  - keccak.c (0.1.3)
+  - PromiseKit (6.7.0):
+    - PromiseKit/CorePromise (= 6.7.0)
+    - PromiseKit/Foundation (= 6.7.0)
+    - PromiseKit/UIKit (= 6.7.0)
+  - PromiseKit/CorePromise (6.7.0)
+  - PromiseKit/Foundation (6.7.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.7.0):
+    - PromiseKit/CorePromise
+  - scrypt.c (0.1.1)
+  - secp256k1.c (0.1.2)
+  - SipHash (1.2.2)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.2.0)
+  - web3swift.pod (2.1.3):
+    - BigInt (~> 3.1)
+    - keccak.c (~> 0.1)
+    - PromiseKit (~> 6.4)
+    - scrypt.c (~> 0.1)
+    - secp256k1.c (~> 0.1)
+
+DEPENDENCIES:
+  - Alamofire (= 4.0)
+  - FoldingCell
+  - SVProgressHUD
+  - SwiftyJSON
+  - web3swift.pod
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - BigInt
+    - FoldingCell
+    - keccak.c
+    - PromiseKit
+    - scrypt.c
+    - secp256k1.c
+    - SipHash
+    - SVProgressHUD
+    - SwiftyJSON
+    - web3swift.pod
+
+SPEC CHECKSUMS:
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  BigInt: 76b5dfdfa3e2e478d4ffdf161aeede5502e2742f
+  FoldingCell: 352f0211a53f957b885a1b37d5ffa875da90bca5
+  keccak.c: 859583afdaccb4e4fcc0f0096064d101580313f4
+  PromiseKit: 453ddcc947fe7b302f3ef41882b81d31c554df7f
+  scrypt.c: b42ae06183251329d2b2c620c226fb541a4a3592
+  secp256k1.c: db47b726585d80f027423682eb369729e61b3b20
+  SipHash: fad90a4683e420c52ef28063063dbbce248ea6d4
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  web3swift.pod: e032ea5dd43810ab32c8f293ad5e3dd508c452dd
+
+PODFILE CHECKSUM: 03ebfb93951682c7242a40ba1a2acead14b99257
+
+COCOAPODS: 1.5.3

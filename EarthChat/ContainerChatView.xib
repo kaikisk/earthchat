@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContainerChatView" customModule="EarthChat" customModuleProvider="target">
+            <connections>
+                <outlet property="chatTextView" destination="vcA-Ms-NZL" id="UgN-hH-f92"/>
+                <outlet property="iconImageView" destination="CYh-LM-55y" id="6Ay-rW-Xkb"/>
+                <outlet property="nameLabel" destination="bpT-Ug-Mwq" id="96K-bE-eZw"/>
+                <outlet property="starLabel" destination="D1l-om-96f" id="faS-uv-B0v"/>
+                <outlet property="timeStampLabel" destination="YKZ-F2-1Up" id="8Re-nL-KtU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="263" height="289"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpT-Ug-Mwq">
+                    <rect key="frame" x="101" y="0.0" width="61.5" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcA-Ms-NZL">
+                    <rect key="frame" x="0.0" y="34" width="263" height="229.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1l-om-96f">
+                    <rect key="frame" x="241" y="266" width="17" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018/12/16 9:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKZ-F2-1Up">
+                    <rect key="frame" x="10" y="268.5" width="124.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CYh-LM-55y">
+                    <rect key="frame" x="62" y="0.0" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="CYh-LM-55y" secondAttribute="height" multiplier="1:1" id="1N3-mB-t0O"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YKZ-F2-1Up" firstAttribute="top" secondItem="vcA-Ms-NZL" secondAttribute="bottom" constant="5" id="0XZ-1P-oLc"/>
+                <constraint firstItem="vcA-Ms-NZL" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="0Yn-ws-8zc"/>
+                <constraint firstItem="bpT-Ug-Mwq" firstAttribute="leading" secondItem="CYh-LM-55y" secondAttribute="trailing" constant="5" id="5yc-OM-Mbm"/>
+                <constraint firstItem="vcA-Ms-NZL" firstAttribute="top" secondItem="bpT-Ug-Mwq" secondAttribute="bottom" constant="5" id="93Y-oB-sVe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="D1l-om-96f" secondAttribute="trailing" constant="5" id="GNy-Fr-GOJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="D1l-om-96f" secondAttribute="bottom" id="Jf0-hU-9cG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="CYh-LM-55y" secondAttribute="top" id="MYg-dC-Hq2"/>
+                <constraint firstItem="bpT-Ug-Mwq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="V1A-iP-GJc"/>
+                <constraint firstItem="YKZ-F2-1Up" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="ZgI-dG-gP8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="YKZ-F2-1Up" secondAttribute="bottom" id="gtc-it-1ow"/>
+                <constraint firstItem="vcA-Ms-NZL" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="keM-1d-qA6"/>
+                <constraint firstItem="vcA-Ms-NZL" firstAttribute="top" secondItem="CYh-LM-55y" secondAttribute="bottom" id="vBh-Xs-rWS"/>
+                <constraint firstItem="bpT-Ug-Mwq" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="xN8-Ac-3M2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="50.399999999999999" y="-15.742128935532236"/>
+        </view>
+    </objects>
+</document>

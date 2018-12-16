@@ -1,0 +1,6 @@
+framework module Pods_EarthChatUITests {
+  umbrella header "Pods-EarthChatUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
